@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+   font: 12px arial, helvetica, clean, sans-serif;
+   color: #414141;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 12px;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial,Helvetica,sans-serif;
+}
+#main{
+	margin:0 auto;
+	}
+
+.VATTEMP {
+    background-color: #FFFFFF;
+    color: #032580;
+    font: 78%/1.4em Arial,Helvetica,sans-serif;
+    margin: 10px auto;
+    padding: 10px 0;
+    width: 790px;
+	height:760px;
+font-size:12px;
+}
+.VATTEMP h1#logo {
+    float: left;
+    margin: 0;
+    width: 120px;
+}
+.VATTEMP .header-main, .content {
+    margin: 0 auto;
+    width: 790px;
+}
+.VATTEMP h1 {
+    font-size: 2em;
+}
+.VATTEMP h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0.7em 0 0.5em;
+}
+.VATTEMP .header {
+    float: right;
+    width: 610px;
+}
+.VATTEMP .header-content {
+    float: left;
+    text-align: center;
+    width: 400px;
+}
+.VATTEMP .header h2 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.VATTEMP .header h2, .header p {
+    margin: 0;
+}
+.VATTEMP .header p.name-upcase {
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+.VATTEMP .header-note {
+    float: right;
+    font-size: 90%;
+    width: 175px;
+}
+.VATTEMP .header .number {
+    color: #333333;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 150%;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clearfix {
+    clear: both;
+}
+.VATTEMP div label.fl-l, div label {
+    margin-right: 5px;
+    margin-top: 3px;
+	float: left;
+}
+.VATTEMP .input-code {
+    border: 1px solid #4b75cc;
+    color: #4b75cc;
+    float: left;
+    font-weight: bold;
+    text-align: center;
+    width: 18px;
+	height:14px
+}
+label.fl-l, div label {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.VATTEMP div label.fl-l, div label {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.VATTEMP .input-name, .input-date 
+{
+    border:0;
+    border-bottom:1px dotted #4b75cc;
+}
+.VATTEMP .input-name, .back-bold, .input-date {
+    color: #333333;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 11px;
+}
+.VATTEMP .statistics {
+    clear: both;
+    margin-right: 10px;
+}
+.VATTEMP .statistics table {
+    background:url(../images/vnpt.gif) no-repeat scroll 50% 70px transparent;
+    border: 1px solid #4b75cc;
+    font-size: 90%;
+    margin: 15px 0;
+}
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+.VATTEMP .statistics table th {
+    font-size: 80%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.VATTEMP .statistics table th, .statistics table td {
+    border-bottom: 1px solid #DE6294;
+    border-right: 1px solid #DE6294;
+    padding: 2px;
+}
+table td, table th {
+    border: 0 none;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+.VATTEMP .statistics table td.stt {
+    text-align: center;
+}
+.VATTEMP .statistics table .back td {
+    color: #333333;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 120%;
+}
+.VATTEMP .statistics table .noline td {
+    border-bottom: 0 none;
+}
+.VATTEMP .statistics table th, .statistics table td {
+    border-bottom: 1px solid #4b75cc;
+    border-right: 1px solid #4b75cc;
+    padding: 2px;
+}
+.VATTEMP .statistics tr td.back-bold {
+    font-size: 140%;
+}
+.VATTEMP .statistics table .back-bold {
+    padding-right: 5px;
+    text-align: right;
+}
+.VATTEMP .statistics tr.bg-pink td {
+    background: none repeat scroll 0 0 #ccd3f4;
+    font-size: 1.3em;
+    text-align: right;
+	padding-right:5px;
+}
+.VATTEMP .payment, .date {
+    margin: 20px 0;
+    text-align: center;
+    width: 40%;
+}
+.VATTEMP .payment {
+    float: left;
+}
+.VATTEMP .payment p, .date p {
+    margin: 0;
+}
+.VATTEMP .date {
+    float: right;
+    height: 120px;
+}
+.VATTEMP .input-date {
+    width: 40px;
+}
+.VATTEMP .input-name, .input-date {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #4b75cc;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.VATTEMP .input-name, .back-bold, .input-date {
+    color: #333333;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 1.3em;
+}

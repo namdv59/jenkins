@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+*
+{
+    margin:0;
+    padding:0;
+}
+html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+   font: 13px arial, helvetica, clean, sans-serif;
+   color: #414141;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 12px;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial,Helvetica,sans-serif;
+}
+#main{
+	margin:0 auto;
+	}
+.invoi_main {
+    border: 2px solid #000000;
+    height: 764px;
+    margin: 5px auto 0;
+    padding-top: 1px;
+    width: 626px;
+}
+.VATTEMP {
+    background-color: #FFFFFF;
+    color: #000;
+    font: 78%/1.4em Arial,Helvetica,sans-serif;
+    margin: 0px auto;
+    padding: 10px 0;
+    width: 620px;
+	border: 1px solid #000;
+	height:740px;
+}
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+}
+.header {
+    float: right;
+    width: 400px;
+}
+.header-main, .content {
+    margin: 0 auto;
+    width: 620px;
+}
+.header-content {
+    float: left;
+    text-align: center;
+    width: 150px;
+}
+.logo{
+	float:left;
+	width:100px;
+	margin-left: -206px;
+}
+.header h2 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header h2, .header p {
+    margin: 0;
+}
+.header p.name-upcase {
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+.header-note {
+    float: right;
+    font-size: 90%;
+    width: 160px;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+	margin-top: 5px;
+}
+label.fl-l,label {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.fl-l {
+    float:left;
+}
+.main-content{
+	padding-left:5px;
+}
+.input-name, .input-date {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #000;
+    border-style: none none dotted;
+    border-width: 0 0 1px;
+}
+.VATTEMP .statistics table th, .statistics table td {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+ayment, .date {
+    margin: 20px 0;
+    text-align: center;
+    width: 30%;
+}
+.payment {
+    float: left;
+}
+.date{
+	float:right;
+}
+

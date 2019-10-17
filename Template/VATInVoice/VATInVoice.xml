@@ -1,0 +1,33 @@
+﻿<Invoice>
+  <Content Id="SigningData">
+    <InvoiceName> HÓA ĐƠN DỊCH VỤ VIỄN THÔNG (GTGT)</InvoiceName>
+    <InvoicePattern>01GTKT/001</InvoicePattern>
+    <SerialNo>AA/12E</SerialNo>
+    <InvoiceNo>0000000</InvoiceNo>
+    <Kind_of_Payment></Kind_of_Payment>
+    <ComName>TRUNG TÂM ĐIỆN TOÁN TRUYỀN SỐ LIỆU KHU VỰC 1</ComName>
+    <ComTaxCode>0100691544001</ComTaxCode>
+    <ComAddress>Nhà Internet, Lô 2A, Làng quốc tế Thăng Long, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội</ComAddress>
+    <ComPhone></ComPhone>
+    <ComBankNo></ComBankNo>
+    <ComBankName></ComBankName>
+    <CusCode></CusCode>
+    <CusName></CusName>
+    <CusTaxCode></CusTaxCode>
+    <CusPhone></CusPhone>
+    <CusAddress></CusAddress>
+    <CusBankName />
+    <CusBankNo />
+    <Total></Total>
+    <Amount></Amount>
+    <Amount_words></Amount_words>
+    <KindOfService />
+    <VAT_Amount></VAT_Amount>
+    <VAT_Rate></VAT_Rate>
+    <Discount_Rate></Discount_Rate>
+    <Discount_Amount></Discount_Amount>
+    <Products>
+    </Products>
+    <SignDate></SignDate>
+  </Content>
+</Invoice>
