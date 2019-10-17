@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="shortcut icon" href="/Content/Images/logo.ico" type="image/x-icon" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        <%="Quản trị" %></title>
+    <link href="/Content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/redmond/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/Content/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui-1.8.12.custom.min.js"></script>
+    <script src="/Content/js/FXUtils.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="TemPlateContainer" runat="server">
+        <div id="wrapper">
+            <div id="header">
+                <div id="banner">
+                    <ul id="pages">
+                        <%if (HttpContext.Current.User.Identity.IsAuthenticated)
+                          {%>
+                        <li><a href="#">
+                            <%=HttpContext.Current.User.Identity.Name%></a></li>
+                        <li><a href="/Account/Logout/">Đăng xuất</a></li>
+                        <%}%>
+                    </ul>
+                </div>
+                <!--End #banner-->
+                <div id="mainNav">
+                    <ul>
+                        <li><a href="/Company/index">Danh mục</a>
+                            <ul>
+                                <li><a href="/InvCategory/index">
+                                    <%=Resources.Einvoice.Cat_LblTitle%></a></li>
+                                <li><a href="/TaxAuthority/index">
+                                    <%=Resources.Einvoice.mnu_Tax%></a></li>
+                                <li><a href="/Cer/Index">
+                                    <%=Resources.Einvoice.mnu_Cert%></a></li>
+                                <li><a href="/PublishInvoice/Index">Tình hình phát hành hóa đơn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Company/index">Quản lý công ty</a>
+                            <ul>
+                                <li><a href="/Company/index">Danh sách công ty</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/InvoiceTemplate/index">QL mẫu HD</a>
+                            <ul>
+                                <li><a href="/InvoiceTemplate/index">Danh mục mẫu hóa đơn</a></li>
+                                <li><a href="/RegisterTemp/Index">Danh mục đăng ký mẫu hóa đơn cho công ty</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/IDM/IndexRole">Quản lý Role</a>
+                            <ul>
+                                <li><a href="/IDM/IndexRole">Quản lý Role</a></li>
+                                <li><a href="/IDM/CreateRole">Tạo Role</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Account/Index">Quản lý tài khoản</a>
+                            <ul>
+                                <li><a href="/Account/Index">Tài khoản</a></li>
+                                <li><a href="/Account/New">Tạo mới</a></li>
+                            </ul>
+                        </li>
+                        <%if (HttpContext.Current.User.Identity.IsAuthenticated)
+                          {%>
+                        <li><a href="/Account/ChangePassword">Đổi mật khẩu</a></li>
+                        <%}%>
+                    </ul>
+                </div>
+                <!--End #mainNav-->
+            </div>
+            <!--End #header-->
+            <div id="mainContent">
+                <div style="min-height: 250px; padding: 10px">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!--End .boxesContent-->
+            </div>
+            <!--End #mainContent-->
+            <div id="footer">
+                <p style="text-align: center; padding-top: 35px; color: #fff">
+                    © Công ty Điện toán và Truyền số liệu (VDC)
+                    <br />
+                    Địa chỉ: Nhà Internet, lô IIA, làng quốc tế Thăng Long, phường Dịch Vọng, quận Cầu
+                    Giấy, Hà Nội
+                </p>
+            </div>
+            <!--End #footer-->
+        </div>
+        <!--End #wrapper-->
+    </div>
+    <%Html.RenderPartial("Messages", ViewData["Messages"]); %>
+    <script type="text/javascript">
+        //cut chuỗi dài quá số ký tự
+        function checkTextMaxLength(textBox) {
+            var utf8codeUnits = 0;
+            var cChar = 0;
+            var mLen = textBox.getAttribute("maxlength");
+            if (mLen == null || mLen == undefined) {
+                textBox.value = textBox.value;
+            }
+            else {
+                var maxLength = parseInt(mLen);
+                while (utf8codeUnits < maxLength) {
+                    var c = textBox.value.charCodeAt(cChar);
+                    
+                    if (c < 128) {
+                        utf8codeUnits++;
+                    }
+                    else if ((c > 127) && (c < 2048)) {
+                        utf8codeUnits = utf8codeUnits + 2;
+                    }
+                    else {
+                        utf8codeUnits = utf8codeUnits + 3;
+                    }
+
+                    if (utf8codeUnits < maxLength) {
+                        cChar++;
+                    }
+                }
+                textBox.value = textBox.value.substring(0, cChar);
+            }
+        }
+        $(document).ready(function () {
+            $("input[type='text']").blur(function () {
+                checkTextMaxLength(this);
+            });
+
+            $("textarea").blur(function () {
+                checkTextMaxLength(this);
+            });
+
+            $(".onlynum").keypress(function (event) {
+                var keypressed = null;
+                if (window.event) { //IE
+                    keypressed = window.event.keyCode;
+                    if (keypressed < 48 || keypressed > 57) {
+                        return false;
+                    }
+                }
+                else {
+                    keypressed = e.which; //NON-IE, Standard
+                    if (keypressed < 48 || keypressed > 57) {
+                        if (e.charCode == 0) {// không phải kí tự thì vẫn ok           
+                            return;
+                        }
+                        return false;
+                    }
+                }
+            });
+            
+            //Chỉ cho nhập chữ và số
+            $(".textandnum").keypress(function (event) {
+                var keypressed = null;
+                if (window.event) { //IE
+                    keypressed = window.event.keyCode;
+                    if (keypressed < 48
+                        || (keypressed > 57 && keypressed < 65)
+                        || (keypressed > 90 && keypressed < 97
+                        || keypressed > 122)) {
+                        return false;
+                    }
+                }
+                else {
+                    keypressed = e.which; //NON-IE, Standard
+                    if (keypressed < 48
+                        || (keypressed > 57 && keypressed < 65)
+                        || (keypressed > 90 && keypressed < 97
+                        || keypressed > 122)) {
+                        if (e.charCode == 0) {// không phải kí tự thì vẫn ok           
+                            return;
+                        }
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
