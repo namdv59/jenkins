@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetPublishInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="comId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPublishInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPublishInvoiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublishInvbyCom">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="taxCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublishInvbyComResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PublishInvbyComResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetbyRegister">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="regisId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ComId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetbyRegisterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetbyRegisterResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPublishInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPublishInvoice" />
+  </wsdl:message>
+  <wsdl:message name="GetPublishInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPublishInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublishInvbyComSoapIn">
+    <wsdl:part name="parameters" element="tns:PublishInvbyCom" />
+  </wsdl:message>
+  <wsdl:message name="PublishInvbyComSoapOut">
+    <wsdl:part name="parameters" element="tns:PublishInvbyComResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetbyRegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:GetbyRegister" />
+  </wsdl:message>
+  <wsdl:message name="GetbyRegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:GetbyRegisterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ManagerServiceSoap">
+    <wsdl:operation name="GetPublishInvoice">
+      <wsdl:input message="tns:GetPublishInvoiceSoapIn" />
+      <wsdl:output message="tns:GetPublishInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PublishInvbyCom">
+      <wsdl:input message="tns:PublishInvbyComSoapIn" />
+      <wsdl:output message="tns:PublishInvbyComSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetbyRegister">
+      <wsdl:input message="tns:GetbyRegisterSoapIn" />
+      <wsdl:output message="tns:GetbyRegisterSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ManagerServiceSoap" type="tns:ManagerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPublishInvoice">
+      <soap:operation soapAction="http://tempuri.org/GetPublishInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishInvbyCom">
+      <soap:operation soapAction="http://tempuri.org/PublishInvbyCom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetbyRegister">
+      <soap:operation soapAction="http://tempuri.org/GetbyRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ManagerServiceSoap12" type="tns:ManagerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPublishInvoice">
+      <soap12:operation soapAction="http://tempuri.org/GetPublishInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishInvbyCom">
+      <soap12:operation soapAction="http://tempuri.org/PublishInvbyCom" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetbyRegister">
+      <soap12:operation soapAction="http://tempuri.org/GetbyRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ManagerService">
+    <wsdl:port name="ManagerServiceSoap" binding="tns:ManagerServiceSoap">
+      <soap:address location="http://localhost:8085/ManagerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ManagerServiceSoap12" binding="tns:ManagerServiceSoap12">
+      <soap12:address location="http://localhost:8085/ManagerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
