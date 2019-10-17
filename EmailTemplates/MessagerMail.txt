@@ -1,0 +1,9 @@
+﻿[subject]
+$site 
+[/subject]
+[body]
+<p>Kính gửi Quý khách hàng,</p>
+<p>$company vừa phát hành hóa đơn mới cho Quý khách hàng. </p>
+<p>Ðể xem chi tiết hóa đơn, Quý khách hàng vui lòng truy cập địa chỉ e-invoice.vn.</p>
+<p>Trân trọng ./.</p>
+[/body]
