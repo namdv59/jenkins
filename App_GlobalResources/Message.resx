@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdjInvSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_Madjust" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MAdjustSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MAdjustUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesAcceptInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesAllLsts" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesLst" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesNoRTemp" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesPleaseWait" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MInvalidInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MNoneCer" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MReFor" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_Mreplace" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MReplaceFor" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MReplaceSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MSendMail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MVerifyCer" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cat_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cert_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cer_DMesCantDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cer_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Com_MesErrFileSize" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Com_UMesInfSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MesChooseInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MesNotChooseInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_IMesCantCreatUser" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_IMesDupCode" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_IMesDupUsername" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_IMesSelectCreate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Cus_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MesCSrc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MesCStore" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MesInvConverted" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Conv_MUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_DMesCantDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvAdj_MesWrongInvNo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_MesNoKeyStoreInfo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_SMesNonexist" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MDaySend" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MDaySend1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvCode" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvCreateDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvCusName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvNo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Minvoice" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvPattern" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvPublishDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvSerial" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvStaffCreate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvStaffPublish" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInvStatus" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_DMesNotAllow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_IMesLstProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_IMesMissProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesChooseInvToPublish" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesConfirmPublish" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesError" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesNotAllowDelLine" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesNullInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesWrongCode" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_SMesNoPubAccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_SMesRTemp" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_UMesCantEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_UMesRequestProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Mmonth" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MNonPubAccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MNullInvInLst" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MPleaseWait" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MRequestProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MRequestRTemp" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Mstt" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Myear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pay_MesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pay_MesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PInv_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PInv_MInvNonExits" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PInv_MLaunch" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PInv_Msuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLInv_ConfirmBatchPub" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLInv_MesErrChooseCert" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLInv_MesPubishSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PLInv_Msuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_IMesCodeExits" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Prod_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_DMesCantDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_MesViewRegPattern" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_MRegInvoice" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReCancel_MesCanceled" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReCancel_MesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReInvCP_Mtitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReInvDetail_MesDelInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReInvDetail_MesUseInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReInvDetail_Mtitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReplaceInvSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_MMissPer" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Role_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_MesUsedPattern" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RTemp_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_IMesCannotCreateUser" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_IMesNotHaveUser" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_IMesUserExits" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_IMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_UMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_DMesUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_MesExistName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_MesWrongFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesCantDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesChangePasswordSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesConfirmDel" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesConfirmPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesErrConfirmPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesInvalidUserOrPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesNewPassLikeOldPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesNotSameOldPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesRetypePass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesWrongAccOrPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesWrongPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_UMesCantEdit" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_UMesExits" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_UMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Com_MessErrofiletail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Com_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_IMesExits" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_IMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_MesReqConfig" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_SMesWrongPassToken" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_DMesSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Staff_MessDeleteStaff" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesEffectiveDateBigToday" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesToDateBigBeginDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdjReInv_MesSignUnsuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Temp_MesConfluentNameTemp" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvAdj_MesConfirmDelProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvAdj_MesErrDelProd" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InvAdj_MesErrInvNo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesConfirmAccept" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesConfirmSend" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesErrDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dec_MesErrSelectDate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Key_MesSelectSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MInv_MesReqInformation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pay_MesConfirm" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pay_MesSelectInv" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_MesConfirmAccept" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pub_MesConfirmSend" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ReUse_ReqTime" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesErrConfirmPas" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesReqConfirmNewPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesReqMinLengthPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesReqNewPass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Tax_UMesDupCode" xml:space="preserve">
+    <value />
+  </data>
+  <data name="User_MesReqOldPass" xml:space="preserve">
+    <value />
+  </data>
+</root>
